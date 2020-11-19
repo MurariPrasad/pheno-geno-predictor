@@ -1,6 +1,6 @@
 # Pheno-Geno-Predictor
 
-##JavaFX Application
+## JavaFX Application
 
 **About**
 -This a basic implementation of a JavaFX GUI which accepts the users basic genetic traits as inputs and displays
