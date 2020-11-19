@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="720.0" minWidth="1280.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="genetic_calc.control">
+   <children>
+      <Label layoutX="767.0" layoutY="512.0" text="Phenotype" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="399.0" layoutY="55.0" text="PHENO GENO PREDICTOR" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="405.0" layoutY="162.0" text="Mother" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_geno1" editable="false" layoutX="768.0" layoutY="209.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="769.0" layoutY="456.0" text="Genotype:" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_pheno1" editable="false" layoutX="767.0" layoutY="263.0" prefHeight="25.0" prefWidth="444.0" />
+      <Label layoutX="80.0" layoutY="159.0" text="CHOOSE GENETIC TRAIT" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="303.0" layoutY="247.0" text="Family Members have similar traits?" textFill="WHITE" />
+      <Label layoutX="303.0" layoutY="391.0" text="Family Members have similar traits?" textFill="WHITE" />
+      <ChoiceBox fx:id="genebox_1" layoutX="99.0" layoutY="218.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="genebox_2" layoutX="99.0" layoutY="357.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="genebox_3" layoutX="103.0" layoutY="492.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="motherbox_1" layoutX="374.0" layoutY="218.0" prefHeight="25.0" prefWidth="106.0" />
+      <ChoiceBox fx:id="motherbox_2" layoutX="373.0" layoutY="357.0" prefHeight="25.0" prefWidth="106.0" />
+      <ChoiceBox fx:id="motherbox_3" layoutX="375.0" layoutY="492.0" prefHeight="25.0" prefWidth="106.0" />
+      <Label layoutX="305.0" layoutY="523.0" text="Family Members have similar traits?" textFill="WHITE" />
+      <Label layoutX="621.0" layoutY="162.0" text="Father" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="fatherbox_1" layoutX="583.0" layoutY="218.0" prefHeight="25.0" prefWidth="106.0" />
+      <ChoiceBox fx:id="fatherbox_2" layoutX="583.0" layoutY="357.0" prefHeight="25.0" prefWidth="106.0" />
+      <ChoiceBox fx:id="fatherbox_3" layoutX="587.0" layoutY="492.0" prefHeight="25.0" prefWidth="106.0" />
+      <Label layoutX="523.0" layoutY="247.0" text="Family Members have similar traits?" textFill="WHITE" />
+      <Label layoutX="523.0" layoutY="391.0" text="Family Members have similar traits?" textFill="WHITE" />
+      <Label layoutX="527.0" layoutY="523.0" text="Family Members have similar traits?" textFill="WHITE" />
+      <TextField fx:id="tf_geno2" editable="false" layoutX="768.0" layoutY="353.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="tf_geno3" editable="false" layoutX="769.0" layoutY="483.0" prefHeight="25.0" prefWidth="174.0" />
+      <RadioButton fx:id="mother_1y" layoutX="374.0" layoutY="264.0" mnemonicParsing="false" text="Yes" textFill="WHITE" />
+      <RadioButton fx:id="mother_1n" layoutX="440.0" layoutY="264.0" mnemonicParsing="false" text="No" textFill="WHITE" />
+      <RadioButton fx:id="mother_2y" layoutX="375.0" layoutY="408.0" mnemonicParsing="false" text="Yes" textFill="WHITE" />
+      <RadioButton fx:id="mother_2n" layoutX="441.0" layoutY="408.0" mnemonicParsing="false" text="No" textFill="WHITE" />
+      <RadioButton fx:id="mother_3y" layoutX="376.0" layoutY="540.0" mnemonicParsing="false" text="Yes" textFill="WHITE" />
+      <RadioButton fx:id="mother_3n" layoutX="442.0" layoutY="540.0" mnemonicParsing="false" text="No" textFill="WHITE" />
+      <RadioButton fx:id="father_3y" layoutX="589.0" layoutY="540.0" mnemonicParsing="false" text="Yes" textFill="WHITE" />
+      <RadioButton fx:id="father_3n" layoutX="655.0" layoutY="540.0" mnemonicParsing="false" text="No" textFill="WHITE" />
+      <RadioButton fx:id="father_2y" layoutX="585.0" layoutY="408.0" mnemonicParsing="false" text="Yes" textFill="WHITE" />
+      <RadioButton fx:id="father_2n" layoutX="651.0" layoutY="408.0" mnemonicParsing="false" text="No" textFill="WHITE" />
+      <RadioButton fx:id="father_1y" layoutX="585.0" layoutY="264.0" mnemonicParsing="false" text="Yes" textFill="WHITE" />
+      <RadioButton fx:id="father_1n" layoutX="651.0" layoutY="264.0" mnemonicParsing="false" text="No" textFill="WHITE" />
+      <Button fx:id="getresults" layoutX="942.0" layoutY="610.0" mnemonicParsing="false" onAction="#getresultsAction" prefHeight="25.0" prefWidth="94.0" text="Get Results" />
+      <TextField fx:id="tf_pheno2" editable="false" layoutX="767.0" layoutY="404.0" prefHeight="25.0" prefWidth="444.0" />
+      <TextField fx:id="tf_pheno3" editable="false" layoutX="767.0" layoutY="537.0" prefHeight="25.0" prefWidth="444.0" />
+      <Label layoutX="767.0" layoutY="378.0" text="Phenotype" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="769.0" layoutY="327.0" text="Genotype:" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="767.0" layoutY="237.0" text="Phenotype" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="769.0" layoutY="183.0" text="Genotype:" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="refresh" layoutX="571.0" layoutY="646.0" mnemonicParsing="false" onAction="#onRefresh" prefHeight="25.0" prefWidth="94.0" text="Refresh" />
+   </children>
+</AnchorPane>
