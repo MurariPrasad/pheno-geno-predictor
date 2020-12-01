@@ -13,6 +13,7 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("home.fxml"));
         Parent root = loader.load();
+        primaryStage.setResizable(false);
         new control().setPrimaryStage(primaryStage);
 
         primaryStage.setTitle("PGP");
