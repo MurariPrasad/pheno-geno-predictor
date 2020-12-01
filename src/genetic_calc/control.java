@@ -27,10 +27,12 @@ public class control {
     Main obj=new Main();
     brain brain_obj=new brain();
 
-    ObservableList<String> genes=FXCollections.observableArrayList("Hair","Height","Eye Colour");
-    ObservableList<String> hair=FXCollections.observableArrayList("Dark Hair", "Light Hair");
+    ObservableList<String> genes=FXCollections.observableArrayList("Hair Colour","Hair Texture","Height","Eye Colour","Blood Rh-factor");
+    ObservableList<String> hair_color=FXCollections.observableArrayList("Dark Hair", "Light Hair");
+    ObservableList<String> hair_texture=FXCollections.observableArrayList("Curly","Straight");
     ObservableList<String> eyes=FXCollections.observableArrayList("Dark Colour", "Light Colour");
     ObservableList<String> height=FXCollections.observableArrayList("Tall(5.9ft+)", "Short");
+    ObservableList<String> blood=FXCollections.observableArrayList("Rh +ve","Rh -ve");
 
     @FXML
     Button getresults,refresh;
@@ -177,9 +179,11 @@ public class control {
     public void genebox_1Action(ActionEvent event)throws Exception{
         String item=(String) genebox_1.getValue();
         switch(item){
-            case "Hair": motherbox_1.setItems(hair); fatherbox_1.setItems(hair); break;
+            case "Hair Colour": motherbox_1.setItems(hair_color); fatherbox_1.setItems(hair_color); break;
+            case "Hair Texture": motherbox_1.setItems(hair_texture); fatherbox_1.setItems(hair_texture); break;
             case "Height": motherbox_1.setItems(height); fatherbox_1.setItems(height); break;
             case "Eye Colour": motherbox_1.setItems(eyes); fatherbox_1.setItems(eyes); break;
+            case "Blood Rh-factor": motherbox_1.setItems(blood); fatherbox_1.setItems(blood); break;
         }
         motherbox_1.setOnAction(event1 -> {
             try { motherbox_1Action((ActionEvent) event1);
@@ -196,9 +200,11 @@ public class control {
     public void genebox_2Action(ActionEvent event)throws Exception{
         String item=(String) genebox_2.getValue();
         switch(item){
-            case "Hair": motherbox_2.setItems(hair); fatherbox_2.setItems(hair); break;
+            case "Hair Colour": motherbox_2.setItems(hair_color); fatherbox_2.setItems(hair_color); break;
+            case "Hair Texture": motherbox_2.setItems(hair_texture); fatherbox_2.setItems(hair_texture); break;
             case "Height": motherbox_2.setItems(height); fatherbox_2.setItems(height); break;
             case "Eye Colour": motherbox_2.setItems(eyes); fatherbox_2.setItems(eyes); break;
+            case "Blood Rh-factor": motherbox_2.setItems(blood); fatherbox_2.setItems(blood); break;
         }
         motherbox_2.setOnAction(event1 -> {
             try { motherbox_2Action((ActionEvent) event1);
@@ -215,9 +221,11 @@ public class control {
     public void genebox_3Action(ActionEvent event)throws Exception{
         String item=(String) genebox_3.getValue();
         switch(item){
-            case "Hair": motherbox_3.setItems(hair); fatherbox_3.setItems(hair); break;
+            case "Hair Colour": motherbox_3.setItems(hair_color); fatherbox_3.setItems(hair_color); break;
+            case "Hair Texture": motherbox_3.setItems(hair_texture); fatherbox_3.setItems(hair_texture); break;
             case "Height": motherbox_3.setItems(height); fatherbox_3.setItems(height); break;
             case "Eye Colour": motherbox_3.setItems(eyes); fatherbox_3.setItems(eyes); break;
+            case "Blood Rh-factor": motherbox_3.setItems(blood); fatherbox_3.setItems(blood); break;
         }
         motherbox_3.setOnAction(event1 -> {
             try { motherbox_3Action((ActionEvent) event1);
