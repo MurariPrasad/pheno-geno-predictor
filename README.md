@@ -1,6 +1,6 @@
 # Pheno-Geno-Predictor
-
-## JavaFX Application
+## JavaFX Application 
+### *I Not a Predictive Analysis/Machine Learning Project *I
 
 **About**
 -This a basic implementation of a JavaFX GUI which accepts the users basic genetic traits as inputs and displays
